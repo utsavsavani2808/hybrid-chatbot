@@ -2,6 +2,10 @@
 
 A Python portfolio prototype combining rule-based intent handling, semantic FAQ retrieval, an LLM fallback, sentiment analysis, multilingual responses, and a Streamlit chat interface.
 
+> **Project status: In progress**
+>
+> This project is being developed as part of my technical portfolio. Current priorities include reviewing NLP dependencies, validating the Streamlit interface, and testing the rule-based, semantic retrieval, and LLM response paths. End-to-end testing is still pending.
+
 ## Features
 - Rule-based, semantic-retrieval and LLM response paths
 - Multilingual response option
@@ -41,6 +45,15 @@ The script writes raw responses to `outputs/run_results.csv`. Model downloads an
 
 The query CSV contains test prompts and expected responses, not verified model benchmark results. Run the evaluation in your own environment before reporting accuracy or performance. The prototype loads several NLP models and may require substantial first-run downloads and memory. Review the implementation before production use.
 
+## Current Status & Roadmap
+
+- [x] Prepare portfolio README and setup guidance
+- [x] Add a lightweight GitHub Actions Python syntax check
+- [ ] Complete end-to-end local testing of the Streamlit interface
+- [ ] Validate rule-based, semantic retrieval, and LLM response paths
+- [ ] Capture screenshots from the running application
+- [ ] Document any remaining runtime issues and evaluation results
+
 ## Project Notes
 
-I maintain this repository as part of my technical portfolio. The README and setup guidance have been prepared for this portfolio version. I am continuing to review, test, and document the implementation; any additional code changes and experiments should be recorded in the commit history. Third-party packages, models, and other included materials remain subject to their respective licenses.
+I maintain this repository as part of my technical portfolio. I am continuing to review, test, and document the implementation. The roadmap reflects current priorities and will be updated as work progresses. Third-party packages, models, and other included materials remain subject to their respective licenses.
