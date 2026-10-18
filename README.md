@@ -41,6 +41,6 @@ The script writes raw responses to `outputs/run_results.csv`. Model downloads an
 
 The query CSV contains test prompts and expected responses, not verified model benchmark results. Run the evaluation in your own environment before reporting accuracy or performance. The prototype loads several NLP models and may require substantial first-run downloads and memory. Review the implementation before production use.
 
-## Attribution
+## Project Notes
 
-This is a curated portfolio copy of a supplied project archive. Review third-party package and model licenses before redistribution or commercial use.
+I maintain this repository as part of my technical portfolio. The README and setup guidance have been prepared for this portfolio version. I am continuing to review, test, and document the implementation; any additional code changes and experiments should be recorded in the commit history. Third-party packages, models, and other included materials remain subject to their respective licenses.
