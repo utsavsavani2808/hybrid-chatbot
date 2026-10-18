@@ -1,0 +1,11 @@
+query_id,query_category,user_query,expected_answer
+Q01,FAQ,What are your support hours?,Support is available from 9 AM to 6 PM Monday to Friday.
+Q02,Paraphrased FAQ,When can I contact customer support?,Support is available from 9 AM to 6 PM Monday to Friday.
+Q03,Ambiguous,I need help with my account,Please specify whether you need help with login, password reset, or profile settings.
+Q04,Open-ended,Why is a hybrid chatbot better than a rule-based chatbot?,A hybrid chatbot combines structured control with flexible language understanding.
+Q05,FAQ,How can I reset my password?,You can reset your password using the password reset option on the login page.
+Q06,Paraphrased FAQ,I forgot my password what should I do?,You can reset your password using the password reset option on the login page.
+Q07,Open-ended,Explain how semantic search helps a chatbot,Semantic search improves retrieval by matching meaning rather than exact keywords.
+Q08,Ambiguous,I have an issue,Please clarify whether the issue relates to login, billing, support, or account settings.
+Q09,FAQ,Do you support multiple languages?,Yes, the chatbot supports multilingual interaction.
+Q10,Open-ended,What is the role of the LLM in a hybrid chatbot?,The LLM handles complex, ambiguous, or open-ended user queries.
