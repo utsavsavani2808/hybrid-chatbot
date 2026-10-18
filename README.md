@@ -1,37 +1,46 @@
 # Hybrid Chatbot System
 
-A Python-based hybrid chatbot prototype combining deterministic responses, semantic retrieval and an LLM-backed response path. Includes a Streamlit interface, example test queries and sample evaluation output.
+A Python portfolio prototype combining rule-based intent handling, semantic FAQ retrieval, an LLM fallback, sentiment analysis, multilingual responses, and a Streamlit chat interface.
 
 ## Features
-- Hybrid chatbot response logic and retrieval-oriented flow
-- Streamlit interface
-- Sample test queries and evaluation output
-- Environment-variable based model credentials
+- Rule-based, semantic-retrieval and LLM response paths
+- Multilingual response option
+- Conversation preference/context prototype
+- Sample query dataset
+- Script to run sample queries and write raw responses to CSV
 
-## Run locally
+## Setup
+
+Use Python 3.10 or 3.11 in a virtual environment. Install the packages and English spaCy model:
 
 ```bash
 python -m venv .venv
-# Windows: .venv\\Scripts\\activate
+# Windows PowerShell: .venv\\Scripts\\Activate.ps1
 # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
+```
+
+Set `OPENAI_API_KEY` in your environment before using the LLM response path. Never commit API keys or `.env` files.
+
+Run the Streamlit interface from the repository root:
+
+```bash
 streamlit run src/streamlit_app.py
 ```
 
-Review `src/chatbot.py` for model configuration and dependencies before running. Set `OPENAI_API_KEY` in your environment if your selected execution path requires it. Never commit API keys or `.env` files.
+Run sample queries from the repository root:
 
-## Repository layout
-
-```text
-src/       chatbot and Streamlit UI
-data/     sample test queries
-outputs/  sample evaluation output
-scripts/  query runner
+```bash
+python scripts/run_queries.py
 ```
 
-## Evaluation note
-The included results are sample artifacts. Re-run evaluations in your own environment before making performance claims. This is a learning/portfolio project and should be validated before production use.
+The script writes raw responses to `outputs/run_results.csv`. Model downloads and API calls may take time or incur usage charges.
+
+## Evaluation and limitations
+
+The query CSV contains test prompts and expected responses, not verified model benchmark results. Run the evaluation in your own environment before reporting accuracy or performance. The prototype loads several NLP models and may require substantial first-run downloads and memory. Review the implementation before production use.
 
 ## Attribution
-This repository is a curated portfolio version of a project archive. Review dependencies, third-party model licenses and source attribution before redistribution or commercial use.
+
+This is a curated portfolio copy of a supplied project archive. Review third-party package and model licenses before redistribution or commercial use.
