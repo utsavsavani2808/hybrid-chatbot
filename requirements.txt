@@ -1,4 +1,4 @@
-openai
+openai>=0.27.0,<1.0.0  # chatbot.py uses the legacy ChatCompletion API
 spacy
 sentence-transformers
 wikipedia-api
